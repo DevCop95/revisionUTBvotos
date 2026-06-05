@@ -1,0 +1,320 @@
+/* mobile.css - Responsive overrides for phones (max 768px) */
+/* Written in ASCII only to avoid encoding issues */
+
+/* ─── Touch UX improvements ───────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+button, select, input, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.table-container {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ─── 768px breakpoint ────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* Base layout */
+    .container { padding: 0 1rem !important; }
+    .main-content { padding-top: 1.25rem !important; padding-bottom: 2.5rem !important; }
+    .dashboard-section { margin-bottom: 2rem !important; }
+
+    /* ─── HEADER FIX ─────────────────────────────────────── */
+    .app-header { padding: 0.6rem 0 !important; }
+
+    .header-container {
+        flex-wrap: nowrap !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+    }
+
+    /* Hide the long file name on mobile */
+    .file-tag { display: none !important; }
+
+    /* Logo area */
+    .logo-area {
+        gap: 0.4rem !important;
+        min-width: 0 !important;
+        flex: 1 !important;
+        overflow: hidden !important;
+    }
+
+    .branding-icon {
+        font-size: 1.2rem !important;
+        flex-shrink: 0 !important;
+    }
+
+    .branding-text {
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .branding-text h1 {
+        font-size: 0.82rem !important;
+        line-height: 1.2 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        margin: 0 !important;
+    }
+
+    .branding-text .subtitle {
+        font-size: 0.58rem !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .header-actions {
+        gap: 0.35rem !important;
+        flex-shrink: 0 !important;
+    }
+
+    .theme-toggle-btn {
+        width: 2rem !important;
+        height: 2rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* ─── Metric cards: 2 columns ────────────────────────── */
+    .grid-4 { grid-template-columns: 1fr 1fr !important; gap: 0.6rem !important; }
+    .metric-card { padding: 0.85rem 0.9rem !important; gap: 0.55rem !important; }
+    .metric-value { font-size: 1.1rem !important; }
+    .metric-label { font-size: 0.62rem !important; }
+    .metric-icon { width: 2rem !important; height: 2rem !important; font-size: 1rem !important; }
+
+    /* ─── Section titles ──────────────────────────────────── */
+    .section-title { padding-bottom: 0.6rem !important; margin-bottom: 1rem !important; }
+    .section-title h2 { font-size: 1.05rem !important; }
+    .section-title p { font-size: 0.82rem !important; }
+
+    /* Section title row with map button */
+    .section-title-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0.75rem !important;
+        padding-bottom: 0.6rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .section-title-row .section-title-text h2 { font-size: 1.05rem !important; }
+    .section-title-row .section-title-text p  { font-size: 0.82rem !important; }
+
+    .map-open-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.75rem 1rem !important;
+        font-size: 0.9rem !important;
+        min-height: 2.75rem !important;
+        border-radius: 10px !important;
+    }
+
+    /* ─── Stats bar: horizontal scroll ───────────────────── */
+    .explorer-stats-bar {
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        padding: 0.6rem 0.75rem !important;
+        gap: 0.35rem !important;
+        justify-content: flex-start !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        margin-bottom: 1rem !important;
+    }
+    .explorer-stats-bar::-webkit-scrollbar { display: none !important; }
+    .stat-pill { flex-shrink: 0 !important; min-width: fit-content !important; }
+    .stat-divider { flex-shrink: 0 !important; }
+    .stat-value { font-size: 0.9rem !important; }
+    .stat-label { font-size: 0.62rem !important; }
+
+    /* ─── Explorer tabs: horizontal scroll ───────────────── */
+    .explorer-tabs {
+        overflow-x: auto !important;
+        flex-wrap: nowrap !important;
+        gap: 0.25rem !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+    }
+    .explorer-tabs::-webkit-scrollbar { display: none !important; }
+    .tab-btn {
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+        padding: 0.5rem 0.9rem !important;
+        font-size: 0.8rem !important;
+        min-height: 2.5rem !important;
+    }
+
+    /* ─── Search controls: 1 column ──────────────────────── */
+    .search-controls {
+        grid-template-columns: 1fr !important;
+        gap: 0.6rem !important;
+    }
+
+    /* Prevent iOS zoom on input focus (must be 16px) */
+    input[type="text"],
+    input[type="search"],
+    select,
+    .input-wrapper input,
+    .select-wrapper select {
+        font-size: 16px !important;
+        min-height: 2.75rem !important;
+    }
+
+    /* ─── Table ───────────────────────────────────────────── */
+    .table-container { max-height: 60vh !important; border-radius: 6px !important; }
+    .data-table { font-size: 0.77rem !important; }
+    .data-table th { font-size: 0.61rem !important; padding: 0.5rem 0.45rem !important; }
+    .data-table td { padding: 0.45rem 0.45rem !important; }
+
+    /* Compact winner badge */
+    .winner-cell-badge { gap: 0.15rem !important; padding: 0.1rem 0.2rem !important; }
+    .winner-avatar { width: 14px !important; height: 14px !important; }
+
+    /* ─── Pagination ──────────────────────────────────────── */
+    .pagination-bar {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        text-align: center !important;
+    }
+    .pagination-buttons { width: 100% !important; justify-content: center !important; }
+    .pag-btn {
+        min-height: 2.75rem !important;
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.85rem !important;
+    }
+    .results-count, .page-indicator { font-size: 0.8rem !important; }
+
+    /* ─── Department bars ─────────────────────────────────── */
+    .stats-chart-panel { padding: 1rem !important; }
+    .dept-info {
+        flex-direction: column !important;
+        gap: 0.2rem !important;
+        align-items: flex-start !important;
+    }
+    .dept-name {
+        font-size: 0.82rem !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .dept-numbers { font-size: 0.75rem !important; }
+
+    /* ─── Detail / misc panels ────────────────────────────── */
+    .detail-panel { padding: 1rem !important; }
+    .detail-panel h3 { font-size: 0.9rem !important; }
+    .hash-code-wrapper { padding: 0.4rem 0.6rem !important; }
+    .hash-code-wrapper code { font-size: 0.7rem !important; word-break: break-all !important; }
+    .warning-card { flex-direction: column !important; gap: 0.5rem !important; padding: 0.75rem 1rem !important; }
+    .debate-card { padding: 1rem !important; }
+    .debate-card h4 { font-size: 0.88rem !important; }
+    .debate-card p, .debate-card ul { font-size: 0.81rem !important; }
+    .audit-details-card { padding: 1rem !important; }
+    .vuln-item { padding: 1rem !important; }
+    .vuln-item h5 { font-size: 0.88rem !important; }
+    .vuln-item p { font-size: 0.8rem !important; }
+    .timeline-container { padding: 1rem !important; }
+
+    /* ─── MAP MODAL: full screen ──────────────────────────── */
+    .map-modal-box {
+        width: 100% !important;
+        height: 100dvh !important;
+        max-height: 100dvh !important;
+        border-radius: 0 !important;
+    }
+    .map-modal-header { padding: 0.7rem 1rem !important; }
+    .map-modal-title { font-size: 0.85rem !important; gap: 0.35rem !important; }
+    .map-modal-title .title-sub { display: none !important; }
+    .map-cand-stats { padding: 0.6rem 0.85rem !important; gap: 0.5rem !important; }
+    .map-cand-card { padding: 0.5rem 0.75rem !important; }
+    .map-cand-avatar { width: 36px !important; height: 36px !important; }
+    .map-cand-num { font-size: 1.3rem !important; }
+    .map-cand-name { font-size: 0.78rem !important; }
+    .map-cand-suffix { font-size: 0.68rem !important; }
+}
+
+/* ─── 480px breakpoint ────────────────────────────────────── */
+@media (max-width: 480px) {
+
+    .container { padding: 0 0.75rem !important; }
+
+    .branding-text h1 { font-size: 0.78rem !important; }
+    .branding-text .subtitle { font-size: 0.55rem !important; }
+
+    .grid-4 { grid-template-columns: 1fr 1fr !important; gap: 0.45rem !important; }
+    .metric-card { padding: 0.7rem 0.75rem !important; }
+    .metric-value { font-size: 1rem !important; }
+
+    .section-title h2,
+    .section-title-row .section-title-text h2 { font-size: 0.95rem !important; }
+
+    .hash-code-wrapper code { font-size: 0.63rem !important; }
+
+    .data-table { font-size: 0.72rem !important; }
+    .data-table th { font-size: 0.58rem !important; padding: 0.38rem 0.35rem !important; }
+    .data-table td { padding: 0.35rem 0.35rem !important; }
+
+    .debate-card p, .debate-card ul { font-size: 0.78rem !important; }
+
+    .map-cand-stats { flex-direction: column !important; gap: 0.5rem !important; }
+    .map-cand-card { flex-direction: row !important; gap: 0.6rem !important; }
+
+    .vulnerabilities-grid { grid-template-columns: 1fr !important; }
+    .debate-grid { grid-template-columns: 1fr !important; }
+}
+
+/* === MAP MODAL MOBILE POLISH ===================================
+   Fix spacing between candidate stats strip and map body
+   ============================================================== */
+@media (max-width: 768px) {
+
+    /* Remove internal padding gaps so map fills the space */
+    .map-modal-body {
+        background: #0a0f1e !important;
+    }
+
+    /* Loader: after it hides it must not leave a gap */
+    .map-loader {
+        position: absolute !important;
+        inset: 0 !important;
+    }
+
+    /* Tighten the candidate stat strip on mobile */
+    .map-cand-stats {
+        flex-direction: row !important;
+        gap: 0.5rem !important;
+        padding: 0.5rem 0.75rem !important;
+    }
+
+    .map-cand-card {
+        padding: 0.4rem 0.65rem !important;
+        gap: 0.5rem !important;
+        border-radius: 8px !important;
+    }
+
+    .map-cand-avatar {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .map-cand-num { font-size: 1.2rem !important; }
+    .map-cand-name { font-size: 0.72rem !important; }
+    .map-cand-info small { font-size: 0.6rem !important; }
+
+    /* Map header padding tighter */
+    .map-modal-header {
+        padding: 0.6rem 0.9rem !important;
+        gap: 0.5rem !important;
+    }
+
+    /* Close button touch target */
+    .map-close-btn {
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* === 360px very small phones ================================== */
+@media (max-width: 380px) {
+    .map-cand-stats { flex-direction: column !important; }
+    .map-cand-card { flex-direction: row !important; }
+}

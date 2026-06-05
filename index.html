@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Auditoría Electoral">
+    <title>Auditoría de Metadatos y DIVIPOL - Censo Electoral 2026</title>
+    <meta name="description" content="Análisis independiente de la metadata del archivo DIVIPOL y evaluación de vulnerabilidades en el sistema electoral de la Registraduría Nacional.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" href="favicon-192.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Mobile responsive overrides (clean ASCII file) -->
+    <link rel="stylesheet" href="mobile.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- D3.js for electoral map -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <i class="fa-solid fa-chart-network branding-icon"></i>
+                <div class="branding-text">
+                    <h1>Auditoría de Metadatos y DIVIPOL</h1>
+                    <p class="subtitle">Censo Electoral 2026</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="file-tag">
+                    <span class="pulse-dot"></span>
+                    <span class="file-name-label" id="file-name-pill">Cargando datos...</span>
+                </div>
+                <button id="theme-toggle" class="theme-toggle-btn" title="Alternar Modo Oscuro" aria-label="Alternar Modo Oscuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <!-- SECCIÓN 1: PROPIEDADES DEL ARCHIVO -->
+        <section class="dashboard-section animate-fade-in">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-circle-info"></i> Propiedades del Archivo (Metadatos)</h2>
+                <p>Valores técnicos y firmas de integridad extraídos directamente del archivo PDF analizado.</p>
+            </div>
+            
+            <div class="grid-4">
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-value" id="doc-size">8.45 MB</span>
+                        <span class="metric-label">Peso de Archivo</span>
+                    </div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i class="fa-solid fa-images"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-value" id="doc-pages">541</span>
+                        <span class="metric-label">Páginas</span>
+                    </div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-value" id="doc-records">14,109</span>
+                        <span class="metric-label">Puestos DIVIPOL</span>
+                    </div>
+                </div>
+                <div class="metric-card glass">
+                    <div class="metric-icon"><i class="fa-solid fa-code-compare"></i></div>
+                    <div class="metric-data">
+                        <span class="metric-value" id="doc-version">%PDF-1.5</span>
+                        <span class="metric-label">Formato PDF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-2 mt-4">
+                <div class="detail-panel glass">
+                    <h3><i class="fa-solid fa-fingerprint"></i> Hashes de Integridad (SHA-256 / MD5)</h3>
+                    <div class="hash-list">
+                        <div class="hash-item">
+                            <span class="hash-label">MD5</span>
+                            <div class="hash-code-wrapper">
+                                <code id="hash-md5">83d315c08565653e841c68dcbda11489</code>
+                                <button class="copy-btn" onclick="copyText('hash-md5')"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="hash-item">
+                            <span class="hash-label">SHA-256</span>
+                            <div class="hash-code-wrapper">
+                                <code id="hash-sha256">6655fd26496d5f5d6c04058ab36a8d70dce69c05872f4423649e58810f4eebe0</code>
+                                <button class="copy-btn" onclick="copyText('hash-sha256')"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-panel glass">
+                    <h3><i class="fa-solid fa-tools"></i> Software Emisor</h3>
+                    <table class="simple-table">
+                        <tr>
+                            <th>Creador original:</th>
+                            <td id="meta-creator">Microsoft® Word 2016</td>
+                        </tr>
+                        <tr>
+                            <th>Procesador PDF:</th>
+                            <td id="meta-producer">4-Heights™ PDF Library 3.4.0.6904</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: LÍNEA DE TIEMPO Y EDICIÓN -->
+        <section class="dashboard-section animate-fade-in delay-100">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-timeline"></i> Línea de Tiempo y Edición</h2>
+                <p>Desglose temporal de la creación y la última modificación del documento en base a los husos horarios.</p>
+            </div>
+
+            <div class="timeline-container glass">
+                <div class="timeline-flow">
+                    <div class="timeline-node">
+                        <div class="timeline-time" id="time-created">13:53:52 UTC+2</div>
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot creation-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Creación en Microsoft Word 2016</h4>
+                            <p>Archivo original exportado y guardado bajo huso horario local UTC+2 (Europa).</p>
+                            <span class="timestamp-utc">Equivalente a 11:53:52 UTC</span>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-time" id="time-diff">+11m 14s</div>
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot transition-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Optimización (4-Heights PDF Tools)</h4>
+                            <p>Procesamiento técnico para la compresión, ordenamiento y reparación del archivo de datos.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-time" id="time-modified">12:05:06 UTC</div>
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot modification-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <h4>Última Modificación Registrada</h4>
+                            <p>Firma final de guardado con marca horaria bajo huso de referencia universal (UTC/Z).</p>
+                            <span class="timestamp-utc">Equivalente a 14:05:06 UTC+2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forensic-insight warning-card">
+                    <div class="alert-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="alert-text">
+                        <h4>Análisis del desfase horario de creación/edición</h4>
+                        <p>La hora de modificación (12:05:06 UTC) parece anterior a la de creación (13:53:52 CEST) debido a la diferencia de zonas horarias de los editores. Al normalizar ambas marcas a UTC, la creación ocurrió a las <strong>11:53:52 UTC</strong> y la modificación final a las <strong>12:05:06 UTC</strong>. El archivo fue guardado 11 minutos y 14 segundos después de su creación, descartando cualquier viaje en el tiempo o manipulación imposible de marcas temporales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: CONTEXTO Y DEBATE ELECTORAL -->
+        <section class="dashboard-section animate-fade-in delay-200">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-scale-balanced"></i> Controversia: Los Argumentos sobre el Presunto Fraude</h2>
+                <p>Comparación entre las acusaciones presentadas por el presidente Petro y los contraargumentos técnicos oficiales.</p>
+            </div>
+
+            <div class="debate-grid">
+                <!-- Columna Alertas de Fraude -->
+                <div class="debate-column">
+                    <div class="debate-header alarm">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span>Argumentos de Alerta (Presidente Petro)</span>
+                    </div>
+                    
+                    <div class="glass debate-card alarm-card">
+                        <h4>Modificación del Censo <span class="source-pill">X (Twitter)</span></h4>
+                        <p>Denuncia que el censo electoral definitivo fue alterado de forma irregular cinco días antes de las elecciones (26 de mayo), incrementándose de <strong>41.421.973</strong> a <strong>42.307.373</strong> potenciales sufragantes, lo que habría habilitado la inclusión irregular de 885.409 votantes adicionales.</p>
+                    </div>
+
+                    <div class="glass debate-card alarm-card">
+                        <h4>Metadata y Ruta del Auditor <span class="source-pill">Metadata</span></h4>
+                        <p>Los metadatos revelan que el archivo fue modificado externamente el 26 de mayo a la 1:21:35 PM bajo la ruta del usuario <code>BASICOS_AUDITORES_PRESIDENTE_2026_V3</code>. Esto confirmaría una edición de los listados electorales a espaldas del público.</p>
+                    </div>
+
+                    <div class="glass debate-card alarm-card">
+                        <h4>Mesas con Votación Atípica <span class="source-pill">Evidencia Mesas</span></h4>
+                        <p>Afirma que el software de los hermanos Bautista registra 5.300 mesas atípicas con más de 300 votos en el día, llegando algunas hasta 700 votos. Sostiene que esto excede la capacidad física real de votación en una jornada de 8 horas.</p>
+                    </div>
+                </div>
+
+                <!-- Columna Respuestas Técnicas -->
+                <div class="debate-column">
+                    <div class="debate-header technical">
+                        <i class="fa-solid fa-square-check"></i>
+                        <span>Respuestas Técnicas (Registraduría / Coronell)</span>
+                    </div>
+                    
+                    <div class="glass debate-card tech-card">
+                        <h4>Auditoría Transparente y Censo Inalterado <span class="source-pill">Registraduría</span></h4>
+                        <p>El censo oficial y único utilizado en el preconteo y la web electoral fue siempre el de <strong>41.421.973</strong> (cerrado el 30 de abril). La cifra de 42.3M no existió en los preconteos oficiales y no se alteró la base principal del censo.</p>
+                    </div>
+
+                    <div class="glass debate-card tech-card">
+                        <h4>Acción de Partidos en Copias Locales <span class="source-pill">Daniel Coronell</span></h4>
+                        <p>La metadata del usuario <code>BASICOS_AUDITORES_PRESIDENTE_2026_V3</code> corresponde a una modificación en una de las copias digitales entregadas a los partidos políticos el 30 de abril como parte del ejercicio de control electoral, no en la base matriz de la Registraduría.</p>
+                    </div>
+
+                    <div class="glass debate-card tech-card">
+                        <h4>Capacidad Física en Puestos Especiales <span class="source-pill">DIVIPOL</span></h4>
+                        <p>El límite teórico de 360 votantes por mesa aplica únicamente a cabeceras municipales. Sin embargo, en puestos principales de censo y grandes locaciones (como Corferias, consulados o cárceles), las mesas están oficialmente configuradas para recibir censo de 500, 800 y hasta 1200 votantes inscritos, haciendo perfectamente posible reportar más de 300 votos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIAGNÓSTICO TÉCNICO DE VULNERABILIDADES (IMPARCIALIDAD & TRANSPARENCIA) -->
+            <div class="glass audit-details-card mt-4">
+                <h3><i class="fa-solid fa-shield-halved"></i> Puntos de Falla y Vulnerabilidades del Sistema Electoral</h3>
+                <p class="audit-intro">Análisis crítico de los riesgos estructurales e históricos en la Registraduría Nacional de Colombia, centrados en la concentración de contratos y la falta de veeduría ciudadana independiente.</p>
+                
+                <div class="vulnerabilities-grid">
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-industry"></i> 1. El Rol de Thomas Greg & Sons (Hermanos Bautista)</h5>
+                        <p>Thomas Greg & Sons maneja la logística y el software electoral en Colombia desde hace más de 20 años. En las elecciones de 2026, la adjudicación de contratos como proponente único por más de $2.1 billones de pesos volvió a levantar cuestionamientos sobre el monopolio en la gestión de la biometría y los datos electorales nacionales.</p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-file-invoice"></i> 2. La Falibilidad Histórica del Formulario E-14</h5>
+                        <p>El diligenciamiento a mano del E-14 por los jurados es uno de los mayores puntos de falla. Como se documentó en 2022, las tachaduras, enmendaduras y la digitación manual sin una doble verificación ciega en los centros de transmisión facilitan errores graves o manipulación de cifras antes de entrar al software.</p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-gavel"></i> 3. El Precedente Judicial del Consejo de Estado</h5>
+                        <p>La sentencia del Consejo de Estado en 2018 (demanda del partido MIRA por elecciones de 2014) demostró que el software de escrutinio privado alteró votaciones y funcionó como una "caja negra". Esto sentó un precedente sobre la falta de acceso público e independiente al código fuente y a los algoritmos de consolidación.</p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-code-merge"></i> 4. Opacidad en Control de Versiones y Hashing</h5>
+                        <p>La edición del censo el 26 de mayo por el usuario <code>BASICOS_AUDITORES_PRESIDENTE_2026_V3</code> evidencia la falta de un control criptográfico estricto. Sin firmas digitales públicas (hashing SHA-256 en tiempo real) sobre cada versión compartida con las campañas, es imposible verificar que los datos de las empresas contratistas coincidan con los de los auditores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: EXPLORADOR INTERACTIVO DE DATOS -->
+        <section class="dashboard-section animate-fade-in delay-300">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-database"></i> Explorador de Datos y Auditoría Electoral 2026</h2>
+                <p>Navega e investiga el censo de votantes oficial o la base de datos de mesas con anomalías reportadas en el preconteo.</p>
+            </div>
+
+            <div class="explorer-card glass">
+                <div class="explorer-tabs">
+                    <button class="tab-btn active" id="tab-censo" onclick="switchTab('censo')">
+                        <i class="fa-solid fa-list-check"></i> Censo DIVIPOL Oficial
+                    </button>
+                    <button class="tab-btn" id="tab-anomalias" onclick="switchTab('anomalias')">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Mesas con Anomalías (Evidencia Vercel)
+                    </button>
+                </div>
+
+                <div class="explorer-stats-bar">
+                    <div class="stat-pill">
+                        <span class="stat-label" id="lbl-1">Censo Femenino</span>
+                        <span class="stat-value" id="val-1">0</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-pill">
+                        <span class="stat-label" id="lbl-2">Censo Masculino</span>
+                        <span class="stat-value" id="val-2">0</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-pill">
+                        <span class="stat-label" id="lbl-3">Censo Total</span>
+                        <span class="stat-value highlight" id="val-3">0</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-pill">
+                        <span class="stat-label" id="lbl-4">Mesas Totales</span>
+                        <span class="stat-value" id="val-4">0</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-pill">
+                        <span class="stat-label" id="lbl-5">Promedio / Mesa</span>
+                        <span class="stat-value" id="val-5">0</span>
+                    </div>
+                </div>
+
+                <div class="search-controls">
+                    <div class="input-wrapper search-input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-query" placeholder="Buscar por Puesto de Votación, Municipio o Código...">
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="select-dept">
+                            <option value="">Todos los Departamentos</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select id="select-muni" disabled>
+                            <option value="">Todos los Municipios</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper" id="winner-filter-wrapper" style="display: none;">
+                        <select id="select-winner">
+                            <option value="">Todos los Ganadores</option>
+                            <option value="espriella">Ganó De la Espriella (>50%)</option>
+                            <option value="cepeda">Ganó Iván Cepeda (≤50%)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table" id="data-table">
+                        <thead id="table-head">
+                            <tr>
+                                <th>Código</th>
+                                <th>Departamento</th>
+                                <th>Municipio</th>
+                                <th>Puesto de Votación</th>
+                                <th class="num-col">C. Mujeres</th>
+                                <th class="num-col">C. Hombres</th>
+                                <th class="num-col">Censo Total</th>
+                                <th class="num-col">Mesas</th>
+                                <th class="num-col">Prom/Mesa</th>
+                                <th>Comuna/Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td colspan="10" class="loading-cell">
+                                    <div class="spinner"></div>
+                                    <span>Cargando base de datos electoral...</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-bar">
+                    <span class="results-count" id="results-count">Mostrando 0 de 0 puestos</span>
+                    <div class="pagination-buttons">
+                        <button class="pag-btn" id="btn-prev" disabled><i class="fa-solid fa-chevron-left"></i> Anterior</button>
+                        <span class="page-indicator" id="page-indicator">Página 1 de 1</span>
+                        <button class="pag-btn" id="btn-next" disabled>Siguiente <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: ANÁLISIS DE DEPARTAMENTOS -->
+        <section class="dashboard-section animate-fade-in delay-300">
+            <div class="section-title-row">
+                <div class="section-title-text">
+                    <h2 id="dept-chart-title"><i class="fa-solid fa-chart-column"></i> Censo por Departamentos</h2>
+                    <p id="dept-chart-desc">Estadísticas del potencial electoral agrupadas por departamento.</p>
+                </div>
+                <button class="map-open-btn" onclick="openMapModal()" id="btn-open-map">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    Mapa Electoral 3D
+                </button>
+            </div>
+
+            <div class="glass stats-chart-panel">
+                <div class="dept-stats-container" id="dept-stats-list">
+                    <!-- Agregado dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: CONCLUSIÓN DE LA AUDITORÍA TÉCNICA -->
+        <section class="dashboard-section animate-fade-in delay-300">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-clipboard-check"></i> Conclusión General de la Auditoría</h2>
+                <p>Dictamen técnico consolidado sobre la veracidad del censo, los metadatos y las anomalías de votación.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="glass detail-panel">
+                    <h3><i class="fa-solid fa-circle-check" style="color: var(--color-secondary)"></i> 1. Desmitificación de Marcas de Tiempo y Censo</h3>
+                    <p class="text-muted" style="font-size: 0.875rem; line-height: 1.6;">
+                        El análisis temporal demuestra que la hora de modificación (12:05:06 UTC) ocurrió 11 minutos y 14 segundos después de la creación (11:53:52 UTC), descartando viajes en el tiempo o manipulación retroactiva. El usuario <code>BASICOS_AUDITORES_PRESIDENTE_2026_V3</code> indica modificaciones hechas sobre copias locales compartidas con partidos políticos, no en la base matriz del censo de la Registraduría. Asimismo, el DIVIPOL oficial demuestra que la existencia de mesas con más de 300 votos es legal y físicamente factible, ya que consulados y puestos censo están expresamente configurados para recibir censos de entre 500 y 1.200 electores.
+                    </p>
+                </div>
+                <div class="glass detail-panel">
+                    <h3><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-accent)"></i> 2. Naturaleza de las Anomalías de Mesa</h3>
+                    <p class="text-muted" style="font-size: 0.875rem; line-height: 1.6;">
+                        Las discrepancias en las 1.051 mesas con anomalías de la base de Vercel corresponden a fallas e imprecisiones en el preconteo rápido (E-14 diligenciados a mano por jurados con tachaduras y digitación acelerada), las cuales son sistemáticamente subsanadas en el escrutinio oficial con jueces y testigos electorales. Por ende, no hay evidencia técnica de un "censo paralelo" o fraude masivo algorítmico en la base del censo. Las fallas reales son estructurales: el monopolio de Thomas Greg, el factor de error humano en los formularios analógicos y la falta de un sistema de control de versiones y hashing público en tiempo real.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: METODOLOGÍA DE PROCESAMIENTO Y LIMPIEZA DE DATOS -->
+        <section class="dashboard-section animate-fade-in delay-300">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-code"></i> Metodología y Procesamiento de Datos</h2>
+                <p>Detalle técnico de las herramientas de Python, lógica de extracción y resolución de mojibake e inconsistencias.</p>
+            </div>
+
+            <div class="glass audit-details-card" style="border-top-color: var(--color-primary);">
+                <h3><i class="fa-solid fa-terminal" style="color: var(--color-primary);"></i> Pipeline de Limpieza y Estructuración de DIVIPOL</h3>
+                <p class="audit-intro">Para construir el dataset unificado y resolver los problemas inherentes al formato PDF, se programaron scripts automatizados en Python para la extracción, limpieza y empaquetamiento de los datos.</p>
+                
+                <div class="vulnerabilities-grid">
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-brands fa-python" style="color: var(--color-primary);"></i> 1. Librerías Utilizadas</h5>
+                        <p>El procesamiento se realizó en **Python 3.12** utilizando las siguientes librerías:
+                            <br>• <code>PyPDF2 (PdfReader)</code> para la extracción rápida del texto plano de las 541 páginas del PDF de la Registraduría.
+                            <br>• <code>re</code> para construir expresiones regulares complejas que detectaran códigos DIVIPOL de 9 dígitos.
+                            <br>• <code>json</code> para la serialización intermedia y <code>hashlib</code> para calcular los hashes SHA-256 e integridad del archivo original.
+                        </p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-gears" style="color: var(--color-primary);"></i> 2. Agrupación Multi-línea</h5>
+                        <p>Los registros en el PDF venían divididos en dos líneas separadas (ej: el nombre del puesto/comuna en la línea 1 y los censos/mesas en la línea 2). Se implementó un algoritmo de **máquina de estados** que detectaba los códigos de 9 dígitos al inicio de línea. Si la siguiente línea no comenzaba con un código DIVIPOL válido, se acumulaba recursivamente como parte del nombre del puesto y comuna, logrando unir la información en una sola fila estructurada.</p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-spell-check" style="color: var(--color-primary);"></i> 3. Solución al Mojibake</h5>
+                        <p>Debido a la codificación de fuentes interna del PDF, caracteres con tildes (<code>Á, É, Í, Ó, Ú</code>) y la letra <code>Ñ</code> sufrieron de <em>mojibake</em>, perdiéndose o convirtiéndose en espacios en blanco (ej: <code>NARIÑO</code> se extrajo como <code>NARI O</code>, y <code>SAN ANDRÉS</code> como <code>SAN</code>).
+                            <br>Para solucionarlo, se implementó un pipeline en Python que utiliza el **código numérico oficial DIVIPOL** (los primeros 2 dígitos del código del puesto, ej: <code>23</code> para <code>NARIÑO</code> y <code>56</code> para <code>SAN ANDRÉS</code>) como llave primaria inequívoca, cruzando las cadenas con diccionarios de la división política oficial para restaurar programáticamente los nombres y acentos correctos antes de compilar el JSON.
+                        </p>
+                    </div>
+
+                    <div class="glass vuln-item">
+                        <h5><i class="fa-solid fa-calculator" style="color: var(--color-primary);"></i> 4. Limpieza Numérica y de Formato</h5>
+                        <p>En el PDF, los caracteres de espaciado se insertaron erróneamente dentro de las cadenas numéricas de censo (ej: <code>827 5</code> en vez de <code>8275</code>). Esto se solucionó removiendo los espacios con regex antes de segmentar el bloque en Mujeres, Hombres y Mesas. Adicionalmente, las concatenaciones no deseadas (como <code>CUNDINAMARCAAGUA DE DIOS</code>) se separaron comparando la cadena contra una lista de nombres de departamentos oficiales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════
+         MAPA ELECTORAL 3D — MODAL
+         ════════════════════════════════════════════════════ -->
+    <div class="map-modal-overlay" id="map-modal" role="dialog" aria-modal="true" aria-label="Mapa Electoral 3D Colombia">
+        <div class="map-modal-box">
+
+            <!-- Header -->
+            <div class="map-modal-header">
+                <div class="map-modal-title">
+                    <i class="fa-solid fa-earth-americas title-icon"></i>
+                    <span>Mapa Electoral 3D &mdash; Colombia 2026</span>
+                    <span class="title-sub">Resultados por departamento según datos de mesas reportadas</span>
+                </div>
+                <button class="map-close-btn" onclick="closeMapModal()" title="Cerrar (Esc)">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Candidate stats strip -->
+            <div class="map-cand-stats">
+                <!-- Espriella -->
+                <div class="map-cand-card espriella">
+                    <img src="candidato_espriella.jpg" alt="Abelardo de la Espriella" class="map-cand-avatar espriella">
+                    <div class="map-cand-info">
+                        <span class="map-cand-name">Abelardo de la Espriella</span>
+                        <div class="map-cand-count">
+                            <span class="map-cand-num espriella" id="espriella-dept-count">—</span>
+                            <span class="map-cand-suffix" id="espriella-dept-label">departamentos</span>
+                        </div>
+                        <small style="color:#f97316; font-size:0.7rem; font-weight:600">&#9632; Naranja &mdash; cand_pct &gt; 50%</small>
+                    </div>
+                </div>
+                <!-- Cepeda -->
+                <div class="map-cand-card cepeda">
+                    <img src="candidato_cepeda.jpg" alt="Iván Cepeda" class="map-cand-avatar cepeda">
+                    <div class="map-cand-info">
+                        <span class="map-cand-name">Iván Cepeda Castro</span>
+                        <div class="map-cand-count">
+                            <span class="map-cand-num cepeda" id="cepeda-dept-count">—</span>
+                            <span class="map-cand-suffix" id="cepeda-dept-label">departamentos</span>
+                        </div>
+                        <small style="color:#6366f1; font-size:0.7rem; font-weight:600">&#9632; Índigo &mdash; cand_pct &le; 50%</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map canvas -->
+            <div class="map-modal-body">
+                <!-- Loader -->
+                <div class="map-loader" id="map-loader">
+                    <div class="map-loader-spinner"></div>
+                    <p class="map-loader-text">Iniciando mapa...</p>
+                </div>
+                <!-- D3 renders here -->
+                <div id="colombia-map-container"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Auditoría Electoral Independiente - Transparencia de Datos.</p>
+            <p class="tech-stack">Desarrollado en HTML5, CSS3, JavaScript. Datos procesados localmente en el cliente sin envíos a servidores externos.</p>
+        </div>
+    </footer>
+
+    <!-- Notification system -->
+    <div class="toast" id="toast">Copiado al portapapeles</div>
+
+    <!-- Data scripts -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>

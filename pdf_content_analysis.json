@@ -1,0 +1,3573 @@
+{
+  "page_count": 541,
+  "total_parsed_records": 13068,
+  "total_departments": 394,
+  "total_municipalities": 1842,
+  "departments": {
+    "ANTIOQUIA": {
+      "code": "01",
+      "record_count": 1200,
+      "municipality_count": 155,
+      "municipalities_sample": [
+        "ABEJORRAL",
+        "ABRIAQUI",
+        "ALEJANDRIA",
+        "AMAGA",
+        "AMALFI",
+        "AN DES",
+        "ANDES",
+        "ANGELOPOLIS",
+        "ANGOSTURA",
+        "ANORI"
+      ]
+    },
+    "ANTI OQUIA": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "ANDES",
+        "CAUCASIA",
+        "JERICO",
+        "MEDELLIN",
+        "SAN VICENTE"
+      ]
+    },
+    "ANTIOQU IA": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "APARTADO",
+        "COPACABANA",
+        "MARINILLA",
+        "MEDELLIN",
+        "SEGOVIA"
+      ]
+    },
+    "AN TIOQUIA": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "APARTADO",
+        "CHIGORODO",
+        "MEDELLIN",
+        "MONTEBELLO",
+        "SEGOVIA"
+      ]
+    },
+    "ANTIO QUIA": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "BELLO",
+        "ENVIGADO",
+        "MEDELLIN",
+        "PEQUE",
+        "TARAZA"
+      ]
+    },
+    "ANTIOQUI A": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "BETULIA",
+        "GIRALDO",
+        "MEDELLIN",
+        "RIONEGRO",
+        "URRAO"
+      ]
+    },
+    "ANT IOQUIA": {
+      "code": "01",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "BOLIVAR",
+        "GIRARDOTA",
+        "MEDELLIN",
+        "URRAO"
+      ]
+    },
+    "ANTIOQ UIA": {
+      "code": "01",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "CA ASGORDAS",
+        "ITAGUI",
+        "MEDELLIN",
+        "SAN JERONIMO",
+        "YOLOMBO"
+      ]
+    },
+    "A NTIOQUIA": {
+      "code": "01",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CARACOLI",
+        "ITAGUI",
+        "SAN JUAN DE URABA"
+      ]
+    },
+    "ATLANTICO": {
+      "code": "03",
+      "record_count": 330,
+      "municipality_count": 35,
+      "municipalities_sample": [
+        "B ARANOA",
+        "BA RRANQUILLA",
+        "BAR RANQUILLA",
+        "BARANO A",
+        "BARANOA",
+        "BARRA NQUILLA",
+        "BARRANQ UILLA",
+        "BARRANQU ILLA",
+        "BARRANQUILL A",
+        "BARRANQUILLA"
+      ]
+    },
+    "ATLA NTICO": {
+      "code": "03",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "BARRANQUILLA",
+        "SOLEDAD"
+      ]
+    },
+    "ATLANTI CO": {
+      "code": "03",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "BARRANQUILLA",
+        "SOLEDAD"
+      ]
+    },
+    "AT LANTICO": {
+      "code": "03",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "BARRANQUILLA",
+        "TUBARA"
+      ]
+    },
+    "ATLAN TICO": {
+      "code": "03",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "BARRANQUILLA"
+      ]
+    },
+    "ATLANTIC O": {
+      "code": "03",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CAMPO DE LA CRUZ"
+      ]
+    },
+    "ATL ANTICO": {
+      "code": "03",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "GALAPA"
+      ]
+    },
+    "ATLANT ICO": {
+      "code": "03",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PONEDERA"
+      ]
+    },
+    "A TLANTICO": {
+      "code": "03",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PUERTO COLOMBIA"
+      ]
+    },
+    "BOLIVAR": {
+      "code": "05",
+      "record_count": 622,
+      "municipality_count": 67,
+      "municipalities_sample": [
+        "",
+        "ACHI",
+        "ALTOS DEL ROSARIO",
+        "AR ROYO HONDO",
+        "ARENAL",
+        "ARJONA",
+        "ARROYO HONDO",
+        "BARRANCO DE LOBA",
+        "C ARTAGENA",
+        "CALAMAR"
+      ]
+    },
+    "BOLIV AR": {
+      "code": "05",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CARTAGENA",
+        "MAGANGUE",
+        "SANTA ROSA DEL SUR"
+      ]
+    },
+    "BOL IVAR": {
+      "code": "05",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "",
+        "CARTAGENA",
+        "MARIA LA BAJA"
+      ]
+    },
+    "BOLIVA R": {
+      "code": "05",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "ACHI",
+        "MOMPOS"
+      ]
+    },
+    "B OLIVAR": {
+      "code": "05",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "ACHI",
+        "MOMPOS"
+      ]
+    },
+    "BOLI VAR": {
+      "code": "05",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "CALAMAR",
+        "PINILLOS"
+      ]
+    },
+    "BO LIVAR": {
+      "code": "05",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "EL GUAMO",
+        "SAN JUAN NEPOMUCENO"
+      ]
+    },
+    "BOYACA": {
+      "code": "07",
+      "record_count": 388,
+      "municipality_count": 133,
+      "municipalities_sample": [
+        "",
+        "ALMEIDA",
+        "ARCABUCO",
+        "BELEN",
+        "BERBEO",
+        "BETEITIVA",
+        "BOAVITA",
+        "BOYACA",
+        "BRICE O",
+        "BUENAVI STA"
+      ]
+    },
+    "B OYACA": {
+      "code": "07",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "RONDON"
+      ]
+    },
+    "BOYA CA": {
+      "code": "07",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "COPER",
+        "SOCOTA"
+      ]
+    },
+    "BO YACA": {
+      "code": "07",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "DUITAMA",
+        "TOTA"
+      ]
+    },
+    "BOYAC A": {
+      "code": "07",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "JERICO"
+      ]
+    },
+    "BOY ACA": {
+      "code": "07",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PACHAVITA"
+      ]
+    },
+    "CALDAS": {
+      "code": "09",
+      "record_count": 332,
+      "municipality_count": 39,
+      "municipalities_sample": [
+        "AGUADAS",
+        "ANSE RMA",
+        "ANSERMA",
+        "ARANZAZU",
+        "BELALCAZAR",
+        "CHINCHINA",
+        "FILADELFIA",
+        "LA",
+        "LA DORA DA",
+        "LA DORADA"
+      ]
+    },
+    "CALDA S": {
+      "code": "09",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "MANIZALES",
+        "SAMANA"
+      ]
+    },
+    "CAL DAS": {
+      "code": "09",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MANIZALES"
+      ]
+    },
+    "C ALDAS": {
+      "code": "09",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CHINCHINA"
+      ]
+    },
+    "CALD AS": {
+      "code": "09",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MANZANARES"
+      ]
+    },
+    "CA LDAS": {
+      "code": "09",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PENSILVANIA"
+      ]
+    },
+    "CAUCA": {
+      "code": "11",
+      "record_count": 802,
+      "municipality_count": 53,
+      "municipalities_sample": [
+        "",
+        "ALMAGUER",
+        "AR GELIA",
+        "ARGELIA",
+        "BALBOA",
+        "BOLIV AR",
+        "BOLIVAR",
+        "BUE NOS AIRES",
+        "BUENOS AIRES",
+        "C ALOTO"
+      ]
+    },
+    "CAU CA": {
+      "code": "11",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "",
+        "EL TAMBO",
+        "POPAYAN",
+        "TIMBIQUI"
+      ]
+    },
+    "C AUCA": {
+      "code": "11",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "",
+        "EL TAMBO",
+        "POPAYAN"
+      ]
+    },
+    "CAUC A": {
+      "code": "11",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "BALBOA",
+        "GUACHENE",
+        "PUERTO TEJADA"
+      ]
+    },
+    "CA UCA": {
+      "code": "11",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "BOLIVAR",
+        "LA VEGA",
+        "SANTA ROSA"
+      ]
+    },
+    "CESAR": {
+      "code": "12",
+      "record_count": 294,
+      "municipality_count": 34,
+      "municipalities_sample": [
+        "",
+        "AGUAC HICA",
+        "AGUACHICA",
+        "AGUSTIN CODAZZI",
+        "ASTREA",
+        "BECERRIL",
+        "BOSCONIA",
+        "CHIMICHAGUA",
+        "CHIRIGUANA",
+        "CUR UMANI"
+      ]
+    },
+    "C ESAR": {
+      "code": "12",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "LA PAZ",
+        "VALLEDUPAR"
+      ]
+    },
+    "CESA R": {
+      "code": "12",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "VALLEDUPAR"
+      ]
+    },
+    "CE SAR": {
+      "code": "12",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "AGUSTIN CODAZZI"
+      ]
+    },
+    "CES AR": {
+      "code": "12",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "LA GLORIA"
+      ]
+    },
+    "CORDOBA": {
+      "code": "13",
+      "record_count": 577,
+      "municipality_count": 44,
+      "municipalities_sample": [
+        "",
+        "AYA PEL",
+        "AYAPEL",
+        "BUENAVISTA",
+        "C ERETE",
+        "CANALETE",
+        "CERETE",
+        "CHIMA",
+        "CHIN U",
+        "CHINU"
+      ]
+    },
+    "CORD OBA": {
+      "code": "13",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "LORICA",
+        "MONTERIA",
+        "SAN PELAYO"
+      ]
+    },
+    "CO RDOBA": {
+      "code": "13",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "MO ITOS",
+        "MONTERIA",
+        "VALENCIA"
+      ]
+    },
+    "CORDO BA": {
+      "code": "13",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "AYAPEL",
+        "PUERTO LIBERTADOR"
+      ]
+    },
+    "COR DOBA": {
+      "code": "13",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "CIENAGA DE ORO",
+        "SAHAGUN"
+      ]
+    },
+    "CORDOB A": {
+      "code": "13",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "CHINU",
+        "SAN ANTERO"
+      ]
+    },
+    "C ORDOBA": {
+      "code": "13",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "CHINU",
+        "SAN BERNARDO DEL VIENTO"
+      ]
+    },
+    "CUNDINAMARCAAGUA DE DIOS": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAALBAN": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAANAPOIMA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAANOLAIMA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAARBELAEZ": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCABELTRAN": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCABEL TRAN": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCABITUIMA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCABOJACA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACABRERA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "PUESTO"
+      ]
+    },
+    "CUNDINAMAR CACACHIPAY": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACACHIPAY": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACAJICA": {
+      "code": "15",
+      "record_count": 11,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDI NAMARCACAJICA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACAPARRAPI": {
+      "code": "15",
+      "record_count": 12,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACAQUEZA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACARMEN DE CARUPA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACOGUA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACOTA": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACUCUNUBA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "CENTRO"
+      ]
+    },
+    "CUNDINAMARCACHAGUANI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACHIA": {
+      "code": "15",
+      "record_count": 20,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "CENTRO"
+      ]
+    },
+    "CUNDINAMARCAC HIA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAM ARCACHIA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUN DINAMARCACHIA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACHIPAQUE": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACHOACHI": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCACHOCONTA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAEL COLEGIO": {
+      "code": "15",
+      "record_count": 6,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAEL PE ON": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAEL ROSAL": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFACATATIVA": {
+      "code": "15",
+      "record_count": 21,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "",
+        "CTRO DE",
+        "INSTITUTO"
+      ]
+    },
+    "CUNDINAMARCAFACA TATIVA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARC AFACATATIVA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDIN AMARCAFACATATIVA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFOMEQUE": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "C UNDINAMARCAFOMEQUE": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFOSCA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFUNZA": {
+      "code": "15",
+      "record_count": 23,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "JARDIN INFANTIL"
+      ]
+    },
+    "CUNDINAMARCAFUQUENE": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFUSAGASUGA": {
+      "code": "15",
+      "record_count": 32,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAFU SAGASUGA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMA RCAFUSAGASUGA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUND INAMARCAFUSAGASUGA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGACHALA": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "CORREGIMIENTO"
+      ]
+    },
+    "CUNDINAMARCAGACHANCIPA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGACHETA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGAMA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGIRAR DOT": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGIRARDOT": {
+      "code": "15",
+      "record_count": 23,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "IET"
+      ]
+    },
+    "CUNDINAMARCA GIRARDOT": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINA MARCAGIRARDOT": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CU NDINAMARCAGIRARDOT": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUACHETA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUADUAS": {
+      "code": "15",
+      "record_count": 14,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUASCA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUATAQUI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUATAVITA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUAYABAL": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "DE SIQUIMA"
+      ]
+    },
+    "CUNDINAMARCAGUAYABAL DE SIQUIMA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUAYABETAL": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGUTIERREZ": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAGRANADA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAJER USALEN": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAJUNIN": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALA CALERA": {
+      "code": "15",
+      "record_count": 7,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "POLIDE PORTIVO"
+      ]
+    },
+    "CUNDINAMAR CALA CALERA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALA MESA": {
+      "code": "15",
+      "record_count": 7,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDI NAMARCALA MESA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALA PALMA": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALA PE A": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALA VEGA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCALENGUAZAQUE": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAMACHETA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAMADRID": {
+      "code": "15",
+      "record_count": 20,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "",
+        "COLEGIO",
+        "COLISEO",
+        "SALON"
+      ]
+    },
+    "CUNDINAMARCAM ADRID": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAMANTA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAMEDINA": {
+      "code": "15",
+      "record_count": 10,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAM ARCAMEDINA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAMOSQUERA": {
+      "code": "15",
+      "record_count": 17,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUN DINAMARCAMOSQUERA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCANARI O": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCANEMOCON": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCANILO": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCANIMAIMA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCANOCAIMA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPACHO": {
+      "code": "15",
+      "record_count": 6,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPACH O": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPAIME": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARC APANDI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPASCA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPUERTO SALGAR": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "C UNDINAMARCAPULI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAPULI": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAQUEBRADANEGRA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAQUETAME": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAQUIPILE": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAAPULO": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCARICAURTE": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASAN BERNARDO": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASAN CAYETANO": {
+      "code": "15",
+      "record_count": 7,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASAN CAY ETANO": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASAN FRANCISCO": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASA N FRANCISCO": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASAN JUAN DE RIOSECO": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMA RCASAN JUAN DE RIOSECO": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASASAIMA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASESQUILE": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUND INAMARCASIBATE": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASIBATE": {
+      "code": "15",
+      "record_count": 6,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASILVANIA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASIMIJACA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASOACHA": {
+      "code": "15",
+      "record_count": 67,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "",
+        "IE RICAURTE SEDE",
+        "SALON COMUNAL"
+      ]
+    },
+    "CUNDINAMARCASOACH A": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCA SOACHA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINA MARCASOACHA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CU NDINAMARCASOACHA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASOPO": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASOP O": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASUBACHOQUE": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMAR CASUBACHOQUE": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASUESCA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASUPATA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASUSA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDI NAMARCASUTATAUSA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCASUTATAUSA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATABIO": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATAUSA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATENA": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATENJO": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATIBACUY": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATIBIRITA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATOCAIMA": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATOCANCIPA": {
+      "code": "15",
+      "record_count": 10,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATOCANC IPA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCATOPAIPI": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAUBALA": {
+      "code": "15",
+      "record_count": 12,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAU BALA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAM ARCAUBALA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAUBAQUE": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUN DINAMARCAUBATE": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAUBATE": {
+      "code": "15",
+      "record_count": 13,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAUNE": {
+      "code": "15",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAUTICA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVENECIA": {
+      "code": "15",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVERGARA": {
+      "code": "15",
+      "record_count": 7,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVIANI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVILLAGOMEZ": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVILLAPINZON": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVILL APINZON": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVILLETA": {
+      "code": "15",
+      "record_count": 9,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARC AVILLETA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAVIOTA": {
+      "code": "15",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDIN AMARCAVIOTA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAYACOPI": {
+      "code": "15",
+      "record_count": 13,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "C UNDINAMARCAYACOPI": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAZIPACON": {
+      "code": "15",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAZIPAQUIRA": {
+      "code": "15",
+      "record_count": 20,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAZIPAQUI RA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CUNDINAMARCAZI PAQUIRA": {
+      "code": "15",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "CHOCO": {
+      "code": "17",
+      "record_count": 438,
+      "municipality_count": 34,
+      "municipalities_sample": [
+        "",
+        "ACANDI",
+        "BAGADO",
+        "BAJO",
+        "CARMEN DEL DARIEN",
+        "CE RTEGUI",
+        "CERTEGUI",
+        "CONDOTO",
+        "EL CARMEN",
+        "EL L ITORAL DEL SAN JUAN"
+      ]
+    },
+    "CH OCO": {
+      "code": "17",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "QUIBDO"
+      ]
+    },
+    "CHO CO": {
+      "code": "17",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "BAGADO",
+        "SAN JOSE DEL PALMAR"
+      ]
+    },
+    "C HOCO": {
+      "code": "17",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "TADO"
+      ]
+    },
+    "CHOC O": {
+      "code": "17",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CARMEN DEL DARIEN"
+      ]
+    },
+    "HUILA": {
+      "code": "19",
+      "record_count": 263,
+      "municipality_count": 42,
+      "municipalities_sample": [
+        "",
+        "ACEVEDO",
+        "AGRADO",
+        "AIPE",
+        "ALGECIRAS",
+        "ALTAMIRA",
+        "BARAYA",
+        "CAMPOALEGRE",
+        "COLOMBIA",
+        "ELIAS"
+      ]
+    },
+    "HUIL A": {
+      "code": "19",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "NEIVA"
+      ]
+    },
+    "HU ILA": {
+      "code": "19",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "ALGECIRAS"
+      ]
+    },
+    "HUI LA": {
+      "code": "19",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PALERMO"
+      ]
+    },
+    "H UILA": {
+      "code": "19",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SALADOBLANCO"
+      ]
+    },
+    "MAGDALENA": {
+      "code": "21",
+      "record_count": 351,
+      "municipality_count": 42,
+      "municipalities_sample": [
+        "ALGARROB O",
+        "ALGARROBO",
+        "ARA CATACA",
+        "ARACATACA",
+        "CERRO DE SAN ANTONIO",
+        "CHIVOLO",
+        "CIENAG A",
+        "CIENAGA",
+        "CONCORDIA",
+        "E L BANCO"
+      ]
+    },
+    "MAGD ALENA": {
+      "code": "21",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "PLATO",
+        "SANTA MARTA"
+      ]
+    },
+    "MAGDALE NA": {
+      "code": "21",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "SABANAS DE SAN ANGEL",
+        "SANTA MARTA"
+      ]
+    },
+    "MA GDALENA": {
+      "code": "21",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "SAN SEBASTIAN DE BUENAVISTA",
+        "SANTA MARTA"
+      ]
+    },
+    "MAGDALEN A": {
+      "code": "21",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "EL BANCO"
+      ]
+    },
+    "MAG DALENA": {
+      "code": "21",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "EL BANCO"
+      ]
+    },
+    "MAGDAL ENA": {
+      "code": "21",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "GUAMAL"
+      ]
+    },
+    "M AGDALENA": {
+      "code": "21",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "GUAMAL"
+      ]
+    },
+    "MAGDA LENA": {
+      "code": "21",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "TENERIFE"
+      ]
+    },
+    "NARI O": {
+      "code": "23",
+      "record_count": 817,
+      "municipality_count": 73,
+      "municipalities_sample": [
+        "",
+        "ALDANA",
+        "ANCUYA",
+        "BA RBACOAS",
+        "BARBACO AS",
+        "BARBACOAS",
+        "BELEN",
+        "BUESA CO",
+        "BUESACO",
+        "CHACHAGUI"
+      ]
+    },
+    "NAR I O": {
+      "code": "23",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "",
+        "PASTO",
+        "RICAURTE",
+        "TUMACO"
+      ]
+    },
+    "N ARI O": {
+      "code": "23",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "IPIALES",
+        "PASTO",
+        "SAMANIEGO"
+      ]
+    },
+    "NARI": {
+      "code": "23",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "O"
+      ]
+    },
+    "NA RI O": {
+      "code": "23",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "",
+        "CONSACA",
+        "TUMACO"
+      ]
+    },
+    "RISARALDA": {
+      "code": "24",
+      "record_count": 217,
+      "municipality_count": 19,
+      "municipalities_sample": [
+        "APIA",
+        "B ALBOA",
+        "BALBOA",
+        "BELEN DE UMBRIA",
+        "DOSQ UEBRADAS",
+        "DOSQUEBRA DAS",
+        "DOSQUEBRADAS",
+        "GUATICA",
+        "LA CELIA",
+        "LA VIRGINIA"
+      ]
+    },
+    "RISARAL DA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PEREIRA"
+      ]
+    },
+    "RI SARALDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PEREIRA"
+      ]
+    },
+    "RISAR ALDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PEREIRA"
+      ]
+    },
+    "RISARALD A": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "BELEN DE UMBRIA"
+      ]
+    },
+    "RIS ARALDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "DOSQUEBRADAS"
+      ]
+    },
+    "RISARA LDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "GUATICA"
+      ]
+    },
+    "R ISARALDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "LA VIRGINIA"
+      ]
+    },
+    "RISA RALDA": {
+      "code": "24",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SANTA ROSA DE CABAL"
+      ]
+    },
+    "NORTE DE SANCUCUTA": {
+      "code": "25",
+      "record_count": 83,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCUCUT A": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SAN CUCUTA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE D E SANCUCUTA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NO RTE DE SANCUCUTA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCUC UTA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE S ANCUCUTA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "DE SANCUCUTA",
+        "DE SANPUERTO SANTANDER"
+      ]
+    },
+    "NORTE DE SANABREGO": {
+      "code": "25",
+      "record_count": 25,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANARBOLEDAS": {
+      "code": "25",
+      "record_count": 8,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANARBOLE DAS": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANBOCHALEMA": {
+      "code": "25",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANB OCHALEMA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANBUCARASICA": {
+      "code": "25",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "SANBUCARASICA",
+        "SANSARDINATA"
+      ]
+    },
+    "NORTE DE SANCACOTA": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCACHIRA": {
+      "code": "25",
+      "record_count": 12,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NOR TE DE SANCACHIRA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCONVENCION": {
+      "code": "25",
+      "record_count": 14,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCUCUTILLA": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCHINACOTA": {
+      "code": "25",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCHITAGA": {
+      "code": "25",
+      "record_count": 7,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANCHIT AGA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANDURANIA": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SA NDURANIA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANEL TARRA": {
+      "code": "25",
+      "record_count": 8,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "EL"
+      ]
+    },
+    "NORTE DE SANEL CARMEN": {
+      "code": "25",
+      "record_count": 23,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "N ORTE DE SANEL CARMEN": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANEL ZULIA": {
+      "code": "25",
+      "record_count": 11,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANEL ZULI A": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANGR AMALOTE": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANGRAMALOTE": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANHACARI": {
+      "code": "25",
+      "record_count": 8,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANHERRAN": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORT E DE SANHERRAN": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANLABATECA": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANLA ESPERANZA": {
+      "code": "25",
+      "record_count": 12,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANLA PLAYA": {
+      "code": "25",
+      "record_count": 5,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "EL CINCHO"
+      ]
+    },
+    "NORTE DE SANLOS PATIOS": {
+      "code": "25",
+      "record_count": 17,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "ESCUELA"
+      ]
+    },
+    "NORTE DE SANLOS P ATIOS": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SAN LOS PATIOS": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANLOURDES": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANMUTISCUA": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANOCA A": {
+      "code": "25",
+      "record_count": 40,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE D E SANOCA A": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NO RTE DE SANOCA A": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANPAM PLONA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANPAMPLONA": {
+      "code": "25",
+      "record_count": 10,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE S ANPAMPLONA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANPAMPLONITA": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANPUERTO SANTANDER": {
+      "code": "25",
+      "record_count": 3,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANRAGONVALIA": {
+      "code": "25",
+      "record_count": 4,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSALAZAR": {
+      "code": "25",
+      "record_count": 9,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSAN CALIXTO": {
+      "code": "25",
+      "record_count": 17,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSAN CA LIXTO": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSAN CAYETANO": {
+      "code": "25",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANS ANTIAGO": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSANTIAGO": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSARDINATA": {
+      "code": "25",
+      "record_count": 20,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NOR TE DE SANSARDINATA": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANSILOS": {
+      "code": "25",
+      "record_count": 5,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANTEORAMA": {
+      "code": "25",
+      "record_count": 10,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANTIBU": {
+      "code": "25",
+      "record_count": 18,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SA NTIBU": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANTOLEDO": {
+      "code": "25",
+      "record_count": 10,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "N ORTE DE SANTOLEDO": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANVILLA CARO": {
+      "code": "25",
+      "record_count": 2,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "NORTE DE SANVILLA DEL ROSARIO": {
+      "code": "25",
+      "record_count": 17,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "",
+        "MEGA COLEGIO"
+      ]
+    },
+    "NORTE DE SANVILLA DEL RO SARIO": {
+      "code": "25",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        ""
+      ]
+    },
+    "QUINDIO": {
+      "code": "26",
+      "record_count": 125,
+      "municipality_count": 15,
+      "municipalities_sample": [
+        "AR MENIA",
+        "ARMENIA",
+        "BUENAVISTA",
+        "CALAR CA",
+        "CALARCA",
+        "CIRCASIA",
+        "CORDOBA",
+        "FILANDIA",
+        "GENOVA",
+        "LA TEBAIDA"
+      ]
+    },
+    "QUIN DIO": {
+      "code": "26",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "ARMENIA"
+      ]
+    },
+    "QU INDIO": {
+      "code": "26",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CIRCASIA"
+      ]
+    },
+    "QUIND IO": {
+      "code": "26",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SALENTO"
+      ]
+    },
+    "SANTANDER": {
+      "code": "27",
+      "record_count": 789,
+      "municipality_count": 115,
+      "municipalities_sample": [
+        "AGUADA",
+        "ALBANIA",
+        "ARATOCA",
+        "B UCARAMANGA",
+        "BA RRANCABERMEJA",
+        "BARBOSA",
+        "BARICHARA",
+        "BARRANC ABERMEJA",
+        "BARRANCABERM EJA",
+        "BARRANCABERMEJA"
+      ]
+    },
+    "SANTANDE R": {
+      "code": "27",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "BUCARAMANGA",
+        "EL PLAYON",
+        "OIBA",
+        "VELEZ"
+      ]
+    },
+    "SAN TANDER": {
+      "code": "27",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "BUCARAMANGA",
+        "EL PLAYON",
+        "ONZAGA",
+        "VELEZ"
+      ]
+    },
+    "SANTAN DER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "BARBOSA",
+        "FLORIDABLANCA",
+        "PIEDECUESTA"
+      ]
+    },
+    "S ANTANDER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "BARRANCABERMEJA",
+        "FLORIDABLANCA",
+        "PUENTE NACIONAL"
+      ]
+    },
+    "SANT ANDER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "BARRANCABERMEJA",
+        "GIRON",
+        "RIONEGRO"
+      ]
+    },
+    "SANTAND ER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CARCASI",
+        "GUADALUPE",
+        "SAN GIL"
+      ]
+    },
+    "SA NTANDER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CARCASI",
+        "HATO",
+        "SAN GIL"
+      ]
+    },
+    "SANTA NDER": {
+      "code": "27",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CONTRATACION",
+        "LEBRIJA",
+        "SANTA BARBARA"
+      ]
+    },
+    "SUCRE": {
+      "code": "28",
+      "record_count": 410,
+      "municipality_count": 33,
+      "municipalities_sample": [
+        "",
+        "BUENAVISTA",
+        "CAIMITO",
+        "CHALAN",
+        "CO ROZAL",
+        "COROZAL",
+        "COVE AS",
+        "EL ROBLE",
+        "GUARA NDA",
+        "GUARANDA"
+      ]
+    },
+    "S UCRE": {
+      "code": "28",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "SAN ONOFRE",
+        "SINCELEJO"
+      ]
+    },
+    "SUCR E": {
+      "code": "28",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "COROZAL",
+        "SINCE"
+      ]
+    },
+    "SU CRE": {
+      "code": "28",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "LOS PALMITOS",
+        "TOLUVIEJO"
+      ]
+    },
+    "SUC RE": {
+      "code": "28",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SAMPUES"
+      ]
+    },
+    "TOLIMA": {
+      "code": "29",
+      "record_count": 500,
+      "municipality_count": 59,
+      "municipalities_sample": [
+        "",
+        "ALPUJARRA",
+        "ALVA RADO",
+        "ALVARADO",
+        "AMBALEMA",
+        "ANZOATEGUI",
+        "ATACO",
+        "CAJAMARCA",
+        "CARMEN DE APICALA",
+        "CASABIA NCA"
+      ]
+    },
+    "TOLIM A": {
+      "code": "29",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "GUAMO",
+        "IBAGUE"
+      ]
+    },
+    "TOL IMA": {
+      "code": "29",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "IBAGUE",
+        "MARIQUITA"
+      ]
+    },
+    "T OLIMA": {
+      "code": "29",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "ATACO",
+        "PLANADAS"
+      ]
+    },
+    "TOLI MA": {
+      "code": "29",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "CUNDAY",
+        "ROVIRA"
+      ]
+    },
+    "TO LIMA": {
+      "code": "29",
+      "record_count": 2,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "ESPINAL",
+        "VENADILLO"
+      ]
+    },
+    "VALLE": {
+      "code": "31",
+      "record_count": 1131,
+      "municipality_count": 68,
+      "municipalities_sample": [
+        "",
+        "ALCAL A",
+        "ALCALA",
+        "ANDALUCIA",
+        "ANSERMANUEVO",
+        "ARGELIA",
+        "B UENAVENTURA",
+        "BOLIVAR",
+        "BUE NAVENTURA",
+        "BUENAV ENTURA"
+      ]
+    },
+    "VAL LE": {
+      "code": "31",
+      "record_count": 5,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "BUENAVENTURA",
+        "CALI",
+        "EL DOVIO",
+        "PRADERA",
+        "YUMBO"
+      ]
+    },
+    "V ALLE": {
+      "code": "31",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "BUGA",
+        "CALI",
+        "GUACARI",
+        "ROLDANILLO"
+      ]
+    },
+    "VALL E": {
+      "code": "31",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "CALI",
+        "CANDELARIA",
+        "JAMUNDI",
+        "SEVILLA"
+      ]
+    },
+    "VA LLE": {
+      "code": "31",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "ANSERMANUEVO",
+        "CARTAGO",
+        "PALMIRA",
+        "TULUA"
+      ]
+    },
+    "ARAUCA": {
+      "code": "40",
+      "record_count": 72,
+      "municipality_count": 7,
+      "municipalities_sample": [
+        "AR AUQUITA",
+        "ARAUCA",
+        "ARAUQUITA",
+        "FORTUL",
+        "PUERTO RONDON",
+        "SARAVENA",
+        "TAME"
+      ]
+    },
+    "A RAUCA": {
+      "code": "40",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "ARAUCA"
+      ]
+    },
+    "ARAU CA": {
+      "code": "40",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CRAVO NORTE"
+      ]
+    },
+    "CAQUETA": {
+      "code": "44",
+      "record_count": 149,
+      "municipality_count": 22,
+      "municipalities_sample": [
+        "ALBANIA",
+        "BELEN DE",
+        "BELEN DE LOS ANDAQUIES",
+        "CARTAGENA DEL",
+        "CARTAGENA DEL CHAIRA",
+        "CURILLO",
+        "EL DONCELLO",
+        "EL PAUJIL",
+        "FLORE NCIA",
+        "FLORENCIA"
+      ]
+    },
+    "CA QUETA": {
+      "code": "44",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "FLORENCIA"
+      ]
+    },
+    "CAQUE TA": {
+      "code": "44",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PUERTO RICO"
+      ]
+    },
+    "CAQ UETA": {
+      "code": "44",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SOLANO"
+      ]
+    },
+    "CASANARE": {
+      "code": "46",
+      "record_count": 154,
+      "municipality_count": 23,
+      "municipalities_sample": [
+        "AGUAZUL",
+        "CHAMEZA",
+        "HATO CO ROZAL",
+        "HATO COROZAL",
+        "LA SALINA",
+        "MA NI",
+        "MANI",
+        "MONTERREY",
+        "NUNCHIA",
+        "OROCUE"
+      ]
+    },
+    "CASANA RE": {
+      "code": "46",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "YOPAL"
+      ]
+    },
+    "C ASANARE": {
+      "code": "46",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "AGUAZUL"
+      ]
+    },
+    "CASA NARE": {
+      "code": "46",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "NUNCHIA"
+      ]
+    },
+    "CASANAR E": {
+      "code": "46",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SAN LUIS DE PALENQUE"
+      ]
+    },
+    "CA SANARE": {
+      "code": "46",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "TAMARA"
+      ]
+    },
+    "LA GUAJIRA": {
+      "code": "48",
+      "record_count": 208,
+      "municipality_count": 21,
+      "municipalities_sample": [
+        "ALBANIA",
+        "BARRANCAS",
+        "DIBULLA",
+        "DIST RACCION",
+        "DISTRACCION",
+        "EL MOLINO",
+        "FONSECA",
+        "HATONUEVO",
+        "LA JAGU A DEL PILAR",
+        "LA JAGUA DEL PILAR"
+      ]
+    },
+    "LA GU AJIRA": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "RIOHACHA"
+      ]
+    },
+    "LA GUAJI RA": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "BARRANCAS"
+      ]
+    },
+    "LA GUA JIRA": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MAICAO"
+      ]
+    },
+    "L A GUAJIRA": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MAICAO"
+      ]
+    },
+    "LA GUAJIR A": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SAN JUAN DEL CESAR"
+      ]
+    },
+    "LA G UAJIRA": {
+      "code": "48",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SAN JUAN DEL CESAR"
+      ]
+    },
+    "GUAINIA": {
+      "code": "50",
+      "record_count": 24,
+      "municipality_count": 7,
+      "municipalities_sample": [
+        "",
+        "BARRANCOMINAS",
+        "CACAHUAL",
+        "INIRIDA",
+        "LA GUADALUPE",
+        "PUERTO COLOMBIA",
+        "SAN FELIPE"
+      ]
+    },
+    "GU AINIA": {
+      "code": "50",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "INIRIDA"
+      ]
+    },
+    "META": {
+      "code": "52",
+      "record_count": 285,
+      "municipality_count": 41,
+      "municipalities_sample": [
+        "ACACIAS",
+        "BARR ANCA DE UPIA",
+        "BARRANCA DE UPIA",
+        "CABUYARO",
+        "CASTILLA LA NUEVA",
+        "CUBARRAL",
+        "CUMARAL",
+        "EL CALVARIO",
+        "EL CASTILLO",
+        "EL DORADO"
+      ]
+    },
+    "MET A": {
+      "code": "52",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "VILLAVICENCIO"
+      ]
+    },
+    "M ETA": {
+      "code": "52",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CUMARAL"
+      ]
+    },
+    "ME TA": {
+      "code": "52",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "PUERTO LLERAS"
+      ]
+    },
+    "GUAVIARE": {
+      "code": "54",
+      "record_count": 47,
+      "municipality_count": 8,
+      "municipalities_sample": [
+        "CALAMA R",
+        "CALAMAR",
+        "E L RETORNO",
+        "EL RETORNO",
+        "MIRAFLORES",
+        "SAN JOSE DE L GUAVIARE",
+        "SAN JOSE DEL GUA VIARE",
+        "SAN JOSE DEL GUAVIARE"
+      ]
+    },
+    "SAN ANDRES": {
+      "code": "56",
+      "record_count": 7,
+      "municipality_count": 2,
+      "municipalities_sample": [
+        "PROVIDENCIA",
+        "SAN ANDRES"
+      ]
+    },
+    "SAN": {
+      "code": "56",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "ANDRES"
+      ]
+    },
+    "AMAZONAS": {
+      "code": "60",
+      "record_count": 30,
+      "municipality_count": 11,
+      "municipalities_sample": [
+        "EL ENCANTO",
+        "LA CHORRERA",
+        "LA PEDRERA",
+        "LA VICTOR IA",
+        "LETICIA",
+        "MIRITI PARANA",
+        "PUER TO ARICA",
+        "PUERTO ALEGRIA",
+        "PUERTO NARI O",
+        "PUERTO SANTANDER"
+      ]
+    },
+    "PUTUMAYO": {
+      "code": "64",
+      "record_count": 95,
+      "municipality_count": 13,
+      "municipalities_sample": [
+        "CO LON",
+        "COLON",
+        "MOCOA",
+        "ORITO",
+        "PUERT O CAICEDO",
+        "PUERTO ASIS",
+        "PUERTO CAICEDO",
+        "PUERTO GUZ MAN",
+        "PUERTO GUZMAN",
+        "PUERTO LEGUIZAMO"
+      ]
+    },
+    "PUTUMA YO": {
+      "code": "64",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MOCOA"
+      ]
+    },
+    "P UTUMAYO": {
+      "code": "64",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MOCOA"
+      ]
+    },
+    "PUTU MAYO": {
+      "code": "64",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "SIBUNDOY"
+      ]
+    },
+    "PUTUMAY O": {
+      "code": "64",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "VILLAGARZON"
+      ]
+    },
+    "VA UPES": {
+      "code": "68",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "MITU"
+      ]
+    },
+    "VAUPES": {
+      "code": "68",
+      "record_count": 30,
+      "municipality_count": 5,
+      "municipalities_sample": [
+        "",
+        "CARURU",
+        "MITU",
+        "TARAIRA",
+        "YAVARATE"
+      ]
+    },
+    "VICHADA": {
+      "code": "72",
+      "record_count": 58,
+      "municipality_count": 7,
+      "municipalities_sample": [
+        "CUMARI BO",
+        "CUMARIBO",
+        "L A PRIMAVERA",
+        "LA PRIMAVERA",
+        "PUE RTO CARRE O",
+        "PUERTO CARRE O",
+        "SANTA ROSALIA"
+      ]
+    },
+    "VICHA DA": {
+      "code": "72",
+      "record_count": 1,
+      "municipality_count": 1,
+      "municipalities_sample": [
+        "CUMARIBO"
+      ]
+    },
+    "CONSULADOS": {
+      "code": "88",
+      "record_count": 903,
+      "municipality_count": 94,
+      "municipalities_sample": [
+        "ALEMANIA",
+        "ARGELIA",
+        "ARGENTINA",
+        "ARUB A",
+        "ARUBA",
+        "AUSTRALIA",
+        "AUSTRIA",
+        "AZERBAIYAN",
+        "BELGICA",
+        "BOLIVIA"
+      ]
+    },
+    "CONSULAD OS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "ALEMANIA",
+        "ESPA A",
+        "NUEVA ZELANDIA"
+      ]
+    },
+    "CON SULADOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "ALEMANIA",
+        "ARGENTINA",
+        "ESPA A",
+        "NORUEGA"
+      ]
+    },
+    "CONSUL ADOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "AUSTRIA",
+        "ECUADOR",
+        "ESTADOS UNIDOS",
+        "POLONIA"
+      ]
+    },
+    "C ONSULADOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "BELGICA",
+        "EL SALVADOR",
+        "ESTADOS UNIDOS",
+        "PORTUGAL"
+      ]
+    },
+    "CONSULADO S": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "CANADA",
+        "ESTADOS UNIDOS",
+        "REPUBLICA DE FILIPINAS",
+        "SUECIA"
+      ]
+    },
+    "CONS ULADOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "CANADA",
+        "ESTADOS UNIDOS",
+        "FINLANDIA",
+        "SUIZA"
+      ]
+    },
+    "CONSULA DOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 4,
+      "municipalities_sample": [
+        "CHILE",
+        "HAITI",
+        "INDONESIA",
+        "VENEZUELA"
+      ]
+    },
+    "CO NSULADOS": {
+      "code": "88",
+      "record_count": 4,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "CHINA REPUBLICA POPULAR",
+        "INGLATERRA",
+        "VENEZUELA"
+      ]
+    },
+    "CONSU LADOS": {
+      "code": "88",
+      "record_count": 3,
+      "municipality_count": 3,
+      "municipalities_sample": [
+        "ECUADOR",
+        "LIBANO",
+        "REPUBLICA DE SINGAPUR"
+      ]
+    }
+  }
+}

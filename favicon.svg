@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fondo redondeado oscuro -->
+  <rect width="32" height="32" rx="7" fill="#0f172a"/>
+  <!-- Barra izquierda (gris muted) -->
+  <rect x="3" y="22" width="7" height="7" rx="1.5" fill="#475569"/>
+  <!-- Barra central (indigo - candidato) -->
+  <rect x="12.5" y="14" width="7" height="15" rx="1.5" fill="#4f46e5"/>
+  <!-- Barra derecha (naranja - De la Espriella) -->
+  <rect x="22" y="8" width="7" height="21" rx="1.5" fill="#f97316"/>
+  <!-- Línea de tendencia -->
+  <polyline
+    points="6.5,20  16,12  25.5,6"
+    fill="none"
+    stroke="#818cf8"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Puntos de datos -->
+  <circle cx="6.5"  cy="20" r="1.6" fill="#818cf8"/>
+  <circle cx="16"   cy="12" r="1.6" fill="#818cf8"/>
+  <circle cx="25.5" cy="6"  r="1.6" fill="#f97316"/>
+</svg>

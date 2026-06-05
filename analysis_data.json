@@ -1,0 +1,93 @@
+{
+  "file_info": {
+    "name": "1046427856-La-metadata-del-documento-en-el-que-se-basa-el-presidente-Petro-para-hablar-de-fraude.pdf",
+    "size_bytes": 8858985,
+    "size_mb": 8.45,
+    "md5": "83d315c08565653e841c68dcbda11489",
+    "sha256": "6655fd26496d5f5d6c04058ab36a8d70dce69c05872f4423649e58810f4eebe0",
+    "pdf_version": "%PDF-1.5"
+  },
+  "pdf_metadata": {
+    "/Creator": "Microsoft® Word 2016",
+    "/CreationDate": "D:20260603135352+02'00'",
+    "/ModDate": "D:20260603120506Z",
+    "/Producer": "4-Heights™ PDF Library 3.4.0.6904 (http://www.pdf-tools.com)"
+  },
+  "structure": {
+    "page_count": 541,
+    "samples": [
+      {
+        "page": 1,
+        "line_count": 54,
+        "first_lines": [
+          "010010101ANTIOQUIA   MEDELLIN                      SEC. ESC. LA ESPERANZA",
+          "No 2             1000050540000736300003601COMUNA 1 POPULAR",
+          "010010102ANTIOQUIA   MEDELLIN                      INST.EDUC. LA",
+          "CANDELARIA                100009209000061910 0004401COMUNA 1 POPULAR",
+          "010010103ANTIOQUIA   MEDELLIN                      IE MARIA DE LOS"
+        ],
+        "last_lines": [
+          "MANUELA BELTRAN)   1000064480000835500004203COMUNA 3 MANRIQUE",
+          "010010505ANTIOQUIA   MEDELLIN                      I.E.RAMON MUNERA",
+          "LOPERA                 1000036210000280300001903COMUNA 3 MANRIQUE",
+          "010010506ANTIOQUIA    MEDELLIN                      IE BELLO ORIENTE",
+          "1000013640000119400000803COMUNA 3 MANRIQUE"
+        ]
+      },
+      {
+        "page": 2,
+        "line_count": 54,
+        "first_lines": [
+          "010010507ANTIOQUIA   MEDELLIN                      IE JOSE ROBERTO",
+          "VASQUEZ                 1000019920000168700001103COMUNA 3 MA NRIQUE",
+          "010010508ANTIOQUIA   MEDELLIN                      SEC. ESC. BALDOMERO",
+          "SANIN CANO          1000032360000381300002003COMUNA 3 MANRIQUE",
+          "010010601ANTIOQUIA   MEDELLIN                      I.E. JOSE ANTONIO"
+        ],
+        "last_lines": [
+          "BERNAL LONDO O SJ1000067700000685200003905COMUNA 5 CASTILLA",
+          "010010904ANTIOQUIA   MEDELLIN                      I.E.SEBASTIAN DE",
+          "BELALCAZAR             1000017140000142800000905COMUNA 5 CASTILLA",
+          "010010905ANTIOQUIA   MEDELLIN                      SEC ESC TRICENTENARIO",
+          "1000050370000444200002705COMUNA 5 CASTILLA"
+        ]
+      },
+      {
+        "page": 3,
+        "line_count": 54,
+        "first_lines": [
+          "010010906ANTIOQUIA   MEDELLIN                      SEC ESC TOSCANA",
+          "1000015200000128900000805COMUNA 5 CASTILLA",
+          "010011001ANTIOQUIA   MEDELLIN                      I.E. MARIA MONTESSORI",
+          "1000076140000572 500003805COMUNA 5 CASTILLA",
+          "010011002ANTIOQUIA   MEDELLIN                      ITM CASTILLA"
+        ],
+        "last_lines": [
+          "PAUL                1000052130000436600002807COMUNA 7 ROBLEDO",
+          "010011302ANTIOQUIA   MEDELLIN                      SEC.ESC. EL DIAMANTE",
+          "1000050590000369300002507COMUNA 7 ROBLEDO",
+          "010011303ANTIOQU IA   MEDELLIN                      I.E.EL DIAMANTE (SEDE",
+          "BTO)              1000045950000435800002607COMUNA 7 ROBLEDO"
+        ]
+      },
+      {
+        "page": 541,
+        "line_count": 48,
+        "first_lines": [
+          "888153581CONSULADOS  VENEZUELA                     LUN ES MARACAIBO -",
+          "CONSULADO             90000040000000400000002",
+          "888153582CONSULADOS  VENEZUELA                     MARTES MARACAIBO -",
+          "CONSULADO            90000040000000400000002",
+          "888153583CONSULA DOS  VENEZUELA                     MIERCOLES MARACAIBO -"
+        ],
+        "last_lines": [
+          "CONSULADO        90000075000000750000003",
+          "888156585CONSULADOS  VENEZUELA                     VIERNES SAN CRIST BAL",
+          "- CONSULADO       90000075000000750000003",
+          "888156586CONSULADOS  VENEZUELA                     SABADO SAN CRIST BAL -",
+          "CONSULADO        90000200000001500000006"
+        ]
+      }
+    ]
+  }
+}
