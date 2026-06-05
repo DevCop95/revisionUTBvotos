@@ -185,15 +185,39 @@ function _render(geoJSON) {
 
     container.innerHTML = '';
 
-    const W = container.clientWidth  || 740;
-    const H = container.clientHeight || 560;
+    // Obtener dimensiones de forma robusta para evitar clientHeight = 0 en flexbox
+    let W = container.clientWidth;
+    let H = container.clientHeight;
 
-    // Proyección Mercator ajustada al bounding-box de Colombia
-    const proj = d3.geoMercator().fitExtent([[30, 20], [W - 30, H - 20]], geoJSON);
+    if (H <= 100) {
+        const box = document.querySelector('.map-modal-box');
+        const header = document.querySelector('.map-modal-header');
+        const stats = document.querySelector('.map-cand-stats');
+        const boxH = box ? box.clientHeight : (window.innerHeight * 0.92);
+        const headerH = header ? header.offsetHeight : 60;
+        const statsH = stats ? stats.offsetHeight : 130;
+        H = boxH - headerH - statsH;
+    }
+    if (W <= 100) {
+        const box = document.querySelector('.map-modal-box');
+        W = box ? box.clientWidth : (window.innerWidth * 0.96);
+    }
+
+    // Filtrar San Andrés del cálculo de fitExtent para centrar y maximizar la Colombia continental.
+    // Esto evita que San Andrés (isla lejana) encoja y desplace todo el mapa hacia la derecha.
+    const mainlandFeatures = geoJSON.features.filter(f => {
+        const name = normKey(getFeatureName(f));
+        return !name.includes('SAN ANDRES');
+    });
+    const mainlandGeoJSON = { type: 'FeatureCollection', features: mainlandFeatures };
+
+    // Proyección Mercator ajustada al bounding-box de la parte continental
+    const proj = d3.geoMercator().fitExtent([[15, 15], [W - 15, H - 15]], mainlandGeoJSON);
     const path = d3.geoPath().projection(proj);
 
     // Profundidad del efecto 3D (desplazamiento de la cara lateral)
-    const EX = 10, EY = 8;
+    const EX = W < 480 ? 6 : 10;
+    const EY = W < 480 ? 5 : 8;
 
     // ── SVG principal ────────────────────────────────────────────────────────
     const svg = d3.select(container)
@@ -284,22 +308,11 @@ function _render(geoJSON) {
                 <div style="color:var(--color-text-muted);font-size:0.75rem;margin-top:0.35rem">Sin datos en el dataset</div>
             `;
 
-            let tx = event.offsetX + 16;
-            let ty = event.offsetY - 10;
-            if (tx + 230 > W) tx = event.offsetX - 246;
-            if (ty < 0)       ty = event.offsetY + 12;
-
-            tooltip.html(html)
-                .style('opacity', 1)
-                .style('left', tx + 'px')
-                .style('top',  ty + 'px');
+            tooltip.html(html).style('opacity', 1);
+            positionTooltip(event);
         })
         .on('mousemove', function(event) {
-            let tx = event.offsetX + 16;
-            let ty = event.offsetY - 10;
-            if (tx + 230 > W) tx = event.offsetX - 246;
-            if (ty < 0)       ty = event.offsetY + 12;
-            tooltip.style('left', tx + 'px').style('top', ty + 'px');
+            positionTooltip(event);
         })
         .on('mouseout', function() {
             topPath.interrupt()
@@ -311,32 +324,98 @@ function _render(geoJSON) {
                 .attr('filter', null);
             tooltip.style('opacity', 0);
         });
+
+        // Función inteligente para posicionar el tooltip y evitar que se corte en los bordes
+        function positionTooltip(event) {
+            const tooltipNode = tooltip.node();
+            if (!tooltipNode) return;
+
+            const ttWidth = tooltipNode.offsetWidth || 230;
+            const ttHeight = tooltipNode.offsetHeight || 180;
+
+            let tx = event.offsetX + 16;
+            let ty = event.offsetY - 12;
+
+            // Si se desborda por la derecha, mostrar a la izquierda del cursor
+            if (tx + ttWidth > W) {
+                tx = event.offsetX - ttWidth - 16;
+            }
+            // Evitar desborde por la izquierda
+            if (tx < 8) {
+                tx = 8;
+            }
+
+            // Si se desborda por abajo, mostrar arriba del cursor
+            if (ty + ttHeight > H) {
+                ty = event.offsetY - ttHeight - 12;
+            }
+            // Evitar desborde por arriba
+            if (ty < 8) {
+                ty = 8;
+            }
+
+            tooltip
+                .style('left', tx + 'px')
+                .style('top',  ty + 'px');
+        }
     });
 
     // ── Leyenda integrada en el mapa ─────────────────────────────────────────
-    const LX = W - 170, LY = H - 90;
+    let LX = W - 170;
+    let LY = H - 90;
+    if (W < 480) {
+        LX = W - 145;
+        LY = H - 85;
+    }
     const leg = svg.append('g').attr('transform', `translate(${LX},${LY})`);
 
-    leg.append('rect')
-        .attr('width', 162).attr('height', 78).attr('rx', 8)
-        .attr('fill', 'rgba(0,0,0,0.72)')
-        .attr('stroke', 'rgba(255,255,255,0.08)');
-
-    [
-        { color: CAND.espriella.topFill, label: 'Espriella (naranja)' },
-        { color: CAND.cepeda.topFill,   label: 'Cepeda (índigo)' },
-        { color: CAND.unknown.topFill,  label: 'Sin datos' },
-    ].forEach(({ color, label }, i) => {
-        const y = 20 + i * 22;
+    if (W < 480) {
+        // Leyenda compacta para móviles
         leg.append('rect')
-            .attr('x', 12).attr('y', y - 7)
-            .attr('width', 14).attr('height', 14).attr('rx', 3)
-            .attr('fill', color);
-        leg.append('text')
-            .attr('x', 33).attr('y', y + 4)
-            .attr('fill', '#e5e7eb')
-            .attr('font-size', '11.5px')
-            .attr('font-family', 'ui-sans-serif, system-ui, sans-serif')
-            .text(label);
-    });
+            .attr('width', 135).attr('height', 72).attr('rx', 6)
+            .attr('fill', 'rgba(0,0,0,0.78)')
+            .attr('stroke', 'rgba(255,255,255,0.08)');
+
+        [
+            { color: CAND.espriella.topFill, label: 'Espriella (naranja)' },
+            { color: CAND.cepeda.topFill,   label: 'Cepeda (índigo)' },
+            { color: CAND.unknown.topFill,  label: 'Sin datos' },
+        ].forEach(({ color, label }, i) => {
+            const y = 16 + i * 18;
+            leg.append('rect')
+                .attr('x', 10).attr('y', y - 6)
+                .attr('width', 11).attr('height', 11).attr('rx', 2.5)
+                .attr('fill', color);
+            leg.append('text')
+                .attr('x', 27).attr('y', y + 3)
+                .attr('fill', '#e5e7eb')
+                .attr('font-size', '10px')
+                .attr('font-family', 'ui-sans-serif, system-ui, sans-serif')
+                .text(label);
+        });
+    } else {
+        // Leyenda estándar para desktop
+        leg.append('rect')
+            .attr('width', 162).attr('height', 78).attr('rx', 8)
+            .attr('fill', 'rgba(0,0,0,0.72)')
+            .attr('stroke', 'rgba(255,255,255,0.08)');
+
+        [
+            { color: CAND.espriella.topFill, label: 'Espriella (naranja)' },
+            { color: CAND.cepeda.topFill,   label: 'Cepeda (índigo)' },
+            { color: CAND.unknown.topFill,  label: 'Sin datos' },
+        ].forEach(({ color, label }, i) => {
+            const y = 20 + i * 22;
+            leg.append('rect')
+                .attr('x', 12).attr('y', y - 7)
+                .attr('width', 14).attr('height', 14).attr('rx', 3)
+                .attr('fill', color);
+            leg.append('text')
+                .attr('x', 33).attr('y', y + 4)
+                .attr('fill', '#e5e7eb')
+                .attr('font-size', '11.5px')
+                .attr('font-family', 'ui-sans-serif, system-ui, sans-serif')
+                .text(label);
+        });
+    }
 }
