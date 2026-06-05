@@ -1,4 +1,4 @@
-# 🗳️ Auditoría Electoral UTB — Revisión DIVIPOL 2026
+# 🗳️ Auditoría Electoral Independiente — Revisión DIVIPOL 2026
 
 > **Análisis técnico e independiente** de los metadatos del archivo DIVIPOL y del censo electoral utilizado como base para las afirmaciones de fraude en las elecciones colombianas de 2026.
 
@@ -153,7 +153,7 @@ python -m http.server 8000
 
 ## ⚖️ Descargo de Responsabilidad
 
-Este análisis es de carácter **técnico y académico**, realizado por la Universidad Tecnológica de Bolívar (UTB). No representa una posición política. Los datos provienen de fuentes públicas y el procesamiento es reproducible y verificable.
+Este análisis es de carácter **técnico e independiente**, realizado por la iniciativa ciudadana **Unidos Transparentes**. No representa una posición política. Los datos provienen de fuentes públicas y el procesamiento es reproducible y verificable.
 
 ---
 
